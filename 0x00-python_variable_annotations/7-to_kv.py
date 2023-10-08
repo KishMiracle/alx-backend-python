@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
-from typing import Tuple, Union
+""" Complex Strict types"""
+from typing import Callable, Iterator, Union, Optional, List, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    return (k, float(v**2))i
+    """
+    params: a string k and an int OR float v as arguments
+    returns a tuple.
+    """
+
+    return (k, v**2)
